@@ -13,7 +13,7 @@ for user in users_list_as_hash['users']
   puts user['status']
 end
 
-
+puts users_list_as_hash
 
 
 

@@ -1,0 +1,15 @@
+class CreateHipchatUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      # old method
+      # t.column "name", :string, options
+      # "sexy" migrations
+      # t.string "name", options
+
+      t.integer "hipchat_user_id"
+      t.string "hipchat_username"
+      
+      t.timestamps
+    end
+  end
+end

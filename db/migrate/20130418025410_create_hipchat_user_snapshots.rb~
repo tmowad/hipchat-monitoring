@@ -1,0 +1,8 @@
+class CreateHipchatUserSnapshots < ActiveRecord::Migration
+  def change
+    create_table :hipchat_user_snapshots do |t|
+
+      t.timestamps
+    end
+  end
+end
