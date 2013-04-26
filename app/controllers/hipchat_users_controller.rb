@@ -1,7 +1,7 @@
 class HipchatUsersController < ApplicationController
   def list_users_now
     q = Quicky.new
-    q.calc_users
+    q.record_snapshot
     @lines = q.get_lines
   end
 

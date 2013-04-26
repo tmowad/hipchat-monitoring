@@ -1,7 +1,0 @@
-class HipchatUsersController < ApplicationController
-  def list_users_now
-  end
-
-  def index
-  end
-end

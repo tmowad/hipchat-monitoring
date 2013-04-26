@@ -11,14 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130418025638) do
+ActiveRecord::Schema.define(:version => 20130420011430) do
 
   create_table "admin_users", :force => true do |t|
     t.string   "username"
-    t.string   "password"
+    t.string   "hashed_password"
     t.string   "api_key"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "salt"
   end
 
   create_table "hipchat_user_snapshots", :force => true do |t|
